@@ -1,0 +1,1857 @@
+{
+  "by_variant": {
+    "H3": {
+      "accepted_by_agent_rate": 0.95,
+      "accepted_by_gate_rate": 0.8814814814814815,
+      "constraint_violation_rate": 0.0,
+      "context_bloat_proxy_rate": 0.0,
+      "n": 540,
+      "premature_stop_rate": 0.19444444444444445,
+      "retries_per_success": 0.5721040189125296,
+      "self_biased_acceptance_rate": 0.19444444444444445,
+      "success_rate": 0.7833333333333333,
+      "success_rate_ci": [
+        0.7481481481481481,
+        0.8185185185185185
+      ],
+      "tokens_per_success": 107.58156028368795,
+      "wrong_claim_acceptance_rate": 0.0
+    },
+    "H4": {
+      "accepted_by_agent_rate": 0.9518518518518518,
+      "accepted_by_gate_rate": 1.0,
+      "constraint_violation_rate": 0.0,
+      "context_bloat_proxy_rate": 0.0,
+      "n": 540,
+      "premature_stop_rate": 0.11481481481481481,
+      "retries_per_success": 0.15966386554621848,
+      "self_biased_acceptance_rate": 0.11481481481481481,
+      "success_rate": 0.8814814814814815,
+      "success_rate_ci": [
+        0.8537037037037037,
+        0.9092592592592592
+      ],
+      "tokens_per_success": 95.63025210084034,
+      "wrong_claim_acceptance_rate": 0.0
+    },
+    "generic-retry": {
+      "accepted_by_agent_rate": 0.9277777777777778,
+      "accepted_by_gate_rate": 0.8574074074074074,
+      "constraint_violation_rate": 0.0,
+      "context_bloat_proxy_rate": 0.005555555555555556,
+      "n": 540,
+      "premature_stop_rate": 0.20555555555555555,
+      "retries_per_success": 0.6271604938271605,
+      "self_biased_acceptance_rate": 0.20555555555555555,
+      "success_rate": 0.75,
+      "success_rate_ci": [
+        0.7148148148148148,
+        0.7870370370370371
+      ],
+      "tokens_per_success": 112.4,
+      "wrong_claim_acceptance_rate": 0.0
+    },
+    "natural-retry": {
+      "accepted_by_agent_rate": 0.9185185185185185,
+      "accepted_by_gate_rate": 0.8666666666666667,
+      "constraint_violation_rate": 0.0,
+      "context_bloat_proxy_rate": 0.016666666666666666,
+      "n": 540,
+      "premature_stop_rate": 0.2,
+      "retries_per_success": 0.6093366093366094,
+      "self_biased_acceptance_rate": 0.2,
+      "success_rate": 0.7537037037037037,
+      "success_rate_ci": [
+        0.7166666666666667,
+        0.7851851851851852
+      ],
+      "tokens_per_success": 111.82063882063882,
+      "wrong_claim_acceptance_rate": 0.0
+    },
+    "retain+generic": {
+      "accepted_by_agent_rate": 0.9296296296296296,
+      "accepted_by_gate_rate": 0.8685185185185185,
+      "constraint_violation_rate": 0.0,
+      "context_bloat_proxy_rate": 0.001851851851851852,
+      "n": 540,
+      "premature_stop_rate": 0.18518518518518517,
+      "retries_per_success": 0.19174757281553398,
+      "self_biased_acceptance_rate": 0.18518518518518517,
+      "success_rate": 0.762962962962963,
+      "success_rate_ci": [
+        0.7314814814814815,
+        0.7981481481481482
+      ],
+      "tokens_per_success": 110.4368932038835,
+      "wrong_claim_acceptance_rate": 0.0
+    },
+    "targeted+untyped": {
+      "accepted_by_agent_rate": 0.8481481481481481,
+      "accepted_by_gate_rate": 1.0,
+      "constraint_violation_rate": 0.0,
+      "context_bloat_proxy_rate": 0.0,
+      "n": 540,
+      "premature_stop_rate": 0.11481481481481481,
+      "retries_per_success": 0.20378151260504201,
+      "self_biased_acceptance_rate": 0.11481481481481481,
+      "success_rate": 0.8814814814814815,
+      "success_rate_ci": [
+        0.85,
+        0.9111111111111111
+      ],
+      "tokens_per_success": 95.6281512605042,
+      "wrong_claim_acceptance_rate": 0.0
+    },
+    "typed+no-retain": {
+      "accepted_by_agent_rate": 0.9648148148148148,
+      "accepted_by_gate_rate": 1.0,
+      "constraint_violation_rate": 0.0,
+      "context_bloat_proxy_rate": 0.0,
+      "n": 540,
+      "premature_stop_rate": 0.11296296296296296,
+      "retries_per_success": 0.18789144050104384,
+      "self_biased_acceptance_rate": 0.11296296296296296,
+      "success_rate": 0.8870370370370371,
+      "success_rate_ci": [
+        0.8611111111111112,
+        0.9111111111111111
+      ],
+      "tokens_per_success": 95.01461377870564,
+      "wrong_claim_acceptance_rate": 0.0
+    }
+  },
+  "context_overload_slope": {},
+  "failure_modes_by_benchmark": {
+    "arc_easy": {
+      "H3": {
+        "accepted_by_agent_rate": 0.9166666666666666,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 6
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.08333333333333333,
+        "success_rate": 0.9,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "H4": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 8
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.11666666666666667,
+        "success_rate": 0.8666666666666667,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "generic-retry": {
+        "accepted_by_agent_rate": 0.95,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 6
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.1,
+        "success_rate": 0.9,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "natural-retry": {
+        "accepted_by_agent_rate": 0.8666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 6
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.06666666666666667,
+        "success_rate": 0.9,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "retain+generic": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 4
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.06666666666666667,
+        "success_rate": 0.9333333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "targeted+untyped": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 5
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.06666666666666667,
+        "success_rate": 0.9166666666666666,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "typed+no-retain": {
+        "accepted_by_agent_rate": 0.9166666666666666,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 5
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.08333333333333333,
+        "success_rate": 0.9166666666666666,
+        "wrong_claim_acceptance_rate": 0.0
+      }
+    },
+    "boolq": {
+      "H3": {
+        "accepted_by_agent_rate": 0.95,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 18
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.3,
+        "success_rate": 0.7,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "H4": {
+        "accepted_by_agent_rate": 0.9333333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 20
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.31666666666666665,
+        "success_rate": 0.6666666666666666,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "generic-retry": {
+        "accepted_by_agent_rate": 0.95,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 19
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.3,
+        "success_rate": 0.6833333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "natural-retry": {
+        "accepted_by_agent_rate": 0.9833333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 19
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.31666666666666665,
+        "success_rate": 0.6833333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "retain+generic": {
+        "accepted_by_agent_rate": 0.9333333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 20
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.3,
+        "success_rate": 0.6666666666666666,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "targeted+untyped": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 21
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.35,
+        "success_rate": 0.65,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "typed+no-retain": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 22
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.36666666666666664,
+        "success_rate": 0.6333333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      }
+    },
+    "glue_mrpc": {
+      "H3": {
+        "accepted_by_agent_rate": 0.9833333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 8
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.13333333333333333,
+        "success_rate": 0.8666666666666667,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "H4": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 12
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.2,
+        "success_rate": 0.8,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "generic-retry": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 12
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.2,
+        "success_rate": 0.8,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "natural-retry": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 12
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.2,
+        "success_rate": 0.8,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "retain+generic": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 10
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.16666666666666666,
+        "success_rate": 0.8333333333333334,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "targeted+untyped": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 12
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.2,
+        "success_rate": 0.8,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "typed+no-retain": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 10
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.16666666666666666,
+        "success_rate": 0.8333333333333334,
+        "wrong_claim_acceptance_rate": 0.0
+      }
+    },
+    "glue_rte": {
+      "H3": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 6
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.1,
+        "success_rate": 0.9,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "H4": {
+        "accepted_by_agent_rate": 0.9833333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 9
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.15,
+        "success_rate": 0.85,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "generic-retry": {
+        "accepted_by_agent_rate": 0.9833333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 10
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.16666666666666666,
+        "success_rate": 0.8333333333333334,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "natural-retry": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 11
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.18333333333333332,
+        "success_rate": 0.8166666666666667,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "retain+generic": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 10
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.16666666666666666,
+        "success_rate": 0.8333333333333334,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "targeted+untyped": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 12
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.2,
+        "success_rate": 0.8,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "typed+no-retain": {
+        "accepted_by_agent_rate": 0.9833333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 9
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.15,
+        "success_rate": 0.85,
+        "wrong_claim_acceptance_rate": 0.0
+      }
+    },
+    "glue_sst2": {
+      "H3": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 6
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.1,
+        "success_rate": 0.9,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "H4": {
+        "accepted_by_agent_rate": 0.9833333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 4
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.06666666666666667,
+        "success_rate": 0.9333333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "generic-retry": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 2
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.03333333333333333,
+        "success_rate": 0.9666666666666667,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "natural-retry": {
+        "accepted_by_agent_rate": 0.9833333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 6
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.1,
+        "success_rate": 0.9,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "retain+generic": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 5
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.06666666666666667,
+        "success_rate": 0.9166666666666666,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "targeted+untyped": {
+        "accepted_by_agent_rate": 0.9833333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 6
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.1,
+        "success_rate": 0.9,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "typed+no-retain": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 5
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.08333333333333333,
+        "success_rate": 0.9166666666666666,
+        "wrong_claim_acceptance_rate": 0.0
+      }
+    },
+    "mini_workflow": {
+      "H3": {
+        "accepted_by_agent_rate": 0.8444444444444444,
+        "accepted_by_gate_rate": 0.28888888888888886,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "claim_without_evidence": 79
+        },
+        "n": 90,
+        "self_biased_acceptance_rate": 0.5888888888888889,
+        "success_rate": 0.28888888888888886,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "H4": {
+        "accepted_by_agent_rate": 0.8777777777777778,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {},
+        "n": 90,
+        "self_biased_acceptance_rate": 0.0,
+        "success_rate": 1.0,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "generic-retry": {
+        "accepted_by_agent_rate": 0.7222222222222222,
+        "accepted_by_gate_rate": 0.14444444444444443,
+        "context_bloat_proxy_rate": 0.03333333333333333,
+        "failure_taxonomy": {
+          "artifact_missing": 3,
+          "claim_without_evidence": 101,
+          "client_error": 3,
+          "empty_answer": 3,
+          "expected_substring_missing": 3,
+          "test_failed": 3
+        },
+        "n": 90,
+        "self_biased_acceptance_rate": 0.6,
+        "success_rate": 0.14444444444444443,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "natural-retry": {
+        "accepted_by_agent_rate": 0.6666666666666666,
+        "accepted_by_gate_rate": 0.2,
+        "context_bloat_proxy_rate": 0.1,
+        "failure_taxonomy": {
+          "artifact_missing": 1,
+          "claim_without_evidence": 85,
+          "client_error": 1,
+          "empty_answer": 1,
+          "expected_substring_missing": 9,
+          "test_failed": 9
+        },
+        "n": 90,
+        "self_biased_acceptance_rate": 0.5444444444444444,
+        "success_rate": 0.2,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "retain+generic": {
+        "accepted_by_agent_rate": 0.7333333333333333,
+        "accepted_by_gate_rate": 0.2111111111111111,
+        "context_bloat_proxy_rate": 0.011111111111111112,
+        "failure_taxonomy": {
+          "artifact_missing": 1,
+          "claim_without_evidence": 91,
+          "client_error": 1,
+          "empty_answer": 1,
+          "expected_substring_missing": 1,
+          "test_failed": 1
+        },
+        "n": 90,
+        "self_biased_acceptance_rate": 0.5222222222222223,
+        "success_rate": 0.2111111111111111,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "targeted+untyped": {
+        "accepted_by_agent_rate": 0.18888888888888888,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {},
+        "n": 90,
+        "self_biased_acceptance_rate": 0.0,
+        "success_rate": 1.0,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "typed+no-retain": {
+        "accepted_by_agent_rate": 0.9,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {},
+        "n": 90,
+        "self_biased_acceptance_rate": 0.0,
+        "success_rate": 1.0,
+        "wrong_claim_acceptance_rate": 0.0
+      }
+    },
+    "sciq": {
+      "H3": {
+        "accepted_by_agent_rate": 0.95,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 2
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.03333333333333333,
+        "success_rate": 0.9666666666666667,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "H4": {
+        "accepted_by_agent_rate": 0.9333333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 3
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.05,
+        "success_rate": 0.95,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "generic-retry": {
+        "accepted_by_agent_rate": 0.95,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 2
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.03333333333333333,
+        "success_rate": 0.9666666666666667,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "natural-retry": {
+        "accepted_by_agent_rate": 0.95,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 3
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.05,
+        "success_rate": 0.95,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "retain+generic": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 4
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.05,
+        "success_rate": 0.9333333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "targeted+untyped": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 3
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.03333333333333333,
+        "success_rate": 0.95,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "typed+no-retain": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 4
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.06666666666666667,
+        "success_rate": 0.9333333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      }
+    },
+    "squad": {
+      "H3": {
+        "accepted_by_agent_rate": 0.9833333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 3
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.05,
+        "success_rate": 0.95,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "H4": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 4
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.06666666666666667,
+        "success_rate": 0.9333333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "generic-retry": {
+        "accepted_by_agent_rate": 0.9833333333333333,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 3
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.05,
+        "success_rate": 0.95,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "natural-retry": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 1
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.016666666666666666,
+        "success_rate": 0.9833333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "retain+generic": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 1
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.016666666666666666,
+        "success_rate": 0.9833333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "targeted+untyped": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 1
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.016666666666666666,
+        "success_rate": 0.9833333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "typed+no-retain": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 1
+        },
+        "n": 60,
+        "self_biased_acceptance_rate": 0.016666666666666666,
+        "success_rate": 0.9833333333333333,
+        "wrong_claim_acceptance_rate": 0.0
+      }
+    },
+    "trec_qc": {
+      "H3": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 4
+        },
+        "n": 30,
+        "self_biased_acceptance_rate": 0.13333333333333333,
+        "success_rate": 0.8666666666666667,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "H4": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 4
+        },
+        "n": 30,
+        "self_biased_acceptance_rate": 0.13333333333333333,
+        "success_rate": 0.8666666666666667,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "generic-retry": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 4
+        },
+        "n": 30,
+        "self_biased_acceptance_rate": 0.13333333333333333,
+        "success_rate": 0.8666666666666667,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "natural-retry": {
+        "accepted_by_agent_rate": 0.9666666666666667,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 3
+        },
+        "n": 30,
+        "self_biased_acceptance_rate": 0.1,
+        "success_rate": 0.9,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "retain+generic": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 3
+        },
+        "n": 30,
+        "self_biased_acceptance_rate": 0.1,
+        "success_rate": 0.9,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "targeted+untyped": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 4
+        },
+        "n": 30,
+        "self_biased_acceptance_rate": 0.13333333333333333,
+        "success_rate": 0.8666666666666667,
+        "wrong_claim_acceptance_rate": 0.0
+      },
+      "typed+no-retain": {
+        "accepted_by_agent_rate": 1.0,
+        "accepted_by_gate_rate": 1.0,
+        "context_bloat_proxy_rate": 0.0,
+        "failure_taxonomy": {
+          "answer_mismatch": 5
+        },
+        "n": 30,
+        "self_biased_acceptance_rate": 0.16666666666666666,
+        "success_rate": 0.8333333333333334,
+        "wrong_claim_acceptance_rate": 0.0
+      }
+    }
+  },
+  "failure_taxonomy": {
+    "answer_mismatch": 418,
+    "artifact_missing": 5,
+    "claim_without_evidence": 356,
+    "client_error": 5,
+    "empty_answer": 5,
+    "expected_substring_missing": 13,
+    "test_failed": 13
+  },
+  "n_rows": 3780,
+  "paired_deltas_by_benchmark": {
+    "arc_easy": {
+      "H4_vs_H3": {
+        "baseline_only": 3,
+        "same_fail": 5,
+        "same_pass": 51,
+        "treatment_only": 1
+      },
+      "H4_vs_generic-retry": {
+        "baseline_only": 3,
+        "same_fail": 5,
+        "same_pass": 51,
+        "treatment_only": 1
+      },
+      "H4_vs_retain+generic": {
+        "baseline_only": 4,
+        "same_fail": 4,
+        "same_pass": 52,
+        "treatment_only": 0
+      },
+      "H4_vs_typed+no-retain": {
+        "baseline_only": 3,
+        "same_fail": 5,
+        "same_pass": 52,
+        "treatment_only": 0
+      },
+      "generic-retry_vs_H3": {
+        "baseline_only": 3,
+        "same_fail": 3,
+        "same_pass": 51,
+        "treatment_only": 3
+      },
+      "natural-retry_vs_generic-retry": {
+        "baseline_only": 3,
+        "same_fail": 3,
+        "same_pass": 51,
+        "treatment_only": 3
+      },
+      "retain+generic_vs_generic-retry": {
+        "baseline_only": 2,
+        "same_fail": 2,
+        "same_pass": 52,
+        "treatment_only": 4
+      },
+      "targeted+untyped_vs_natural-retry": {
+        "baseline_only": 1,
+        "same_fail": 4,
+        "same_pass": 53,
+        "treatment_only": 2
+      },
+      "typed+no-retain_vs_targeted+untyped": {
+        "baseline_only": 2,
+        "same_fail": 3,
+        "same_pass": 53,
+        "treatment_only": 2
+      }
+    },
+    "boolq": {
+      "H4_vs_H3": {
+        "baseline_only": 4,
+        "same_fail": 16,
+        "same_pass": 38,
+        "treatment_only": 2
+      },
+      "H4_vs_generic-retry": {
+        "baseline_only": 4,
+        "same_fail": 16,
+        "same_pass": 37,
+        "treatment_only": 3
+      },
+      "H4_vs_retain+generic": {
+        "baseline_only": 2,
+        "same_fail": 18,
+        "same_pass": 38,
+        "treatment_only": 2
+      },
+      "H4_vs_typed+no-retain": {
+        "baseline_only": 3,
+        "same_fail": 17,
+        "same_pass": 35,
+        "treatment_only": 5
+      },
+      "generic-retry_vs_H3": {
+        "baseline_only": 2,
+        "same_fail": 17,
+        "same_pass": 40,
+        "treatment_only": 1
+      },
+      "natural-retry_vs_generic-retry": {
+        "baseline_only": 4,
+        "same_fail": 15,
+        "same_pass": 37,
+        "treatment_only": 4
+      },
+      "retain+generic_vs_generic-retry": {
+        "baseline_only": 3,
+        "same_fail": 17,
+        "same_pass": 38,
+        "treatment_only": 2
+      },
+      "targeted+untyped_vs_natural-retry": {
+        "baseline_only": 5,
+        "same_fail": 16,
+        "same_pass": 36,
+        "treatment_only": 3
+      },
+      "typed+no-retain_vs_targeted+untyped": {
+        "baseline_only": 2,
+        "same_fail": 20,
+        "same_pass": 37,
+        "treatment_only": 1
+      }
+    },
+    "glue_mrpc": {
+      "H4_vs_H3": {
+        "baseline_only": 6,
+        "same_fail": 6,
+        "same_pass": 46,
+        "treatment_only": 2
+      },
+      "H4_vs_generic-retry": {
+        "baseline_only": 4,
+        "same_fail": 8,
+        "same_pass": 44,
+        "treatment_only": 4
+      },
+      "H4_vs_retain+generic": {
+        "baseline_only": 6,
+        "same_fail": 6,
+        "same_pass": 44,
+        "treatment_only": 4
+      },
+      "H4_vs_typed+no-retain": {
+        "baseline_only": 5,
+        "same_fail": 7,
+        "same_pass": 45,
+        "treatment_only": 3
+      },
+      "generic-retry_vs_H3": {
+        "baseline_only": 6,
+        "same_fail": 6,
+        "same_pass": 46,
+        "treatment_only": 2
+      },
+      "natural-retry_vs_generic-retry": {
+        "baseline_only": 3,
+        "same_fail": 9,
+        "same_pass": 45,
+        "treatment_only": 3
+      },
+      "retain+generic_vs_generic-retry": {
+        "baseline_only": 3,
+        "same_fail": 7,
+        "same_pass": 45,
+        "treatment_only": 5
+      },
+      "targeted+untyped_vs_natural-retry": {
+        "baseline_only": 6,
+        "same_fail": 6,
+        "same_pass": 42,
+        "treatment_only": 6
+      },
+      "typed+no-retain_vs_targeted+untyped": {
+        "baseline_only": 5,
+        "same_fail": 5,
+        "same_pass": 43,
+        "treatment_only": 7
+      }
+    },
+    "glue_rte": {
+      "H4_vs_H3": {
+        "baseline_only": 7,
+        "same_fail": 2,
+        "same_pass": 47,
+        "treatment_only": 4
+      },
+      "H4_vs_generic-retry": {
+        "baseline_only": 7,
+        "same_fail": 2,
+        "same_pass": 43,
+        "treatment_only": 8
+      },
+      "H4_vs_retain+generic": {
+        "baseline_only": 8,
+        "same_fail": 1,
+        "same_pass": 42,
+        "treatment_only": 9
+      },
+      "H4_vs_typed+no-retain": {
+        "baseline_only": 5,
+        "same_fail": 4,
+        "same_pass": 46,
+        "treatment_only": 5
+      },
+      "generic-retry_vs_H3": {
+        "baseline_only": 6,
+        "same_fail": 4,
+        "same_pass": 48,
+        "treatment_only": 2
+      },
+      "natural-retry_vs_generic-retry": {
+        "baseline_only": 8,
+        "same_fail": 3,
+        "same_pass": 42,
+        "treatment_only": 7
+      },
+      "retain+generic_vs_generic-retry": {
+        "baseline_only": 4,
+        "same_fail": 6,
+        "same_pass": 46,
+        "treatment_only": 4
+      },
+      "targeted+untyped_vs_natural-retry": {
+        "baseline_only": 8,
+        "same_fail": 4,
+        "same_pass": 41,
+        "treatment_only": 7
+      },
+      "typed+no-retain_vs_targeted+untyped": {
+        "baseline_only": 7,
+        "same_fail": 2,
+        "same_pass": 41,
+        "treatment_only": 10
+      }
+    },
+    "glue_sst2": {
+      "H4_vs_H3": {
+        "baseline_only": 0,
+        "same_fail": 4,
+        "same_pass": 54,
+        "treatment_only": 2
+      },
+      "H4_vs_generic-retry": {
+        "baseline_only": 3,
+        "same_fail": 1,
+        "same_pass": 55,
+        "treatment_only": 1
+      },
+      "H4_vs_retain+generic": {
+        "baseline_only": 1,
+        "same_fail": 3,
+        "same_pass": 54,
+        "treatment_only": 2
+      },
+      "H4_vs_typed+no-retain": {
+        "baseline_only": 1,
+        "same_fail": 3,
+        "same_pass": 54,
+        "treatment_only": 2
+      },
+      "generic-retry_vs_H3": {
+        "baseline_only": 0,
+        "same_fail": 2,
+        "same_pass": 54,
+        "treatment_only": 4
+      },
+      "natural-retry_vs_generic-retry": {
+        "baseline_only": 4,
+        "same_fail": 2,
+        "same_pass": 54,
+        "treatment_only": 0
+      },
+      "retain+generic_vs_generic-retry": {
+        "baseline_only": 3,
+        "same_fail": 2,
+        "same_pass": 55,
+        "treatment_only": 0
+      },
+      "targeted+untyped_vs_natural-retry": {
+        "baseline_only": 0,
+        "same_fail": 6,
+        "same_pass": 54,
+        "treatment_only": 0
+      },
+      "typed+no-retain_vs_targeted+untyped": {
+        "baseline_only": 0,
+        "same_fail": 5,
+        "same_pass": 54,
+        "treatment_only": 1
+      }
+    },
+    "mini_workflow": {
+      "H4_vs_H3": {
+        "baseline_only": 0,
+        "same_fail": 0,
+        "same_pass": 26,
+        "treatment_only": 64
+      },
+      "H4_vs_generic-retry": {
+        "baseline_only": 0,
+        "same_fail": 0,
+        "same_pass": 13,
+        "treatment_only": 77
+      },
+      "H4_vs_retain+generic": {
+        "baseline_only": 0,
+        "same_fail": 0,
+        "same_pass": 19,
+        "treatment_only": 71
+      },
+      "H4_vs_typed+no-retain": {
+        "baseline_only": 0,
+        "same_fail": 0,
+        "same_pass": 90,
+        "treatment_only": 0
+      },
+      "generic-retry_vs_H3": {
+        "baseline_only": 22,
+        "same_fail": 55,
+        "same_pass": 4,
+        "treatment_only": 9
+      },
+      "natural-retry_vs_generic-retry": {
+        "baseline_only": 10,
+        "same_fail": 62,
+        "same_pass": 3,
+        "treatment_only": 15
+      },
+      "retain+generic_vs_generic-retry": {
+        "baseline_only": 10,
+        "same_fail": 61,
+        "same_pass": 3,
+        "treatment_only": 16
+      },
+      "targeted+untyped_vs_natural-retry": {
+        "baseline_only": 0,
+        "same_fail": 0,
+        "same_pass": 18,
+        "treatment_only": 72
+      },
+      "typed+no-retain_vs_targeted+untyped": {
+        "baseline_only": 0,
+        "same_fail": 0,
+        "same_pass": 90,
+        "treatment_only": 0
+      }
+    },
+    "sciq": {
+      "H4_vs_H3": {
+        "baseline_only": 1,
+        "same_fail": 2,
+        "same_pass": 57,
+        "treatment_only": 0
+      },
+      "H4_vs_generic-retry": {
+        "baseline_only": 1,
+        "same_fail": 2,
+        "same_pass": 57,
+        "treatment_only": 0
+      },
+      "H4_vs_retain+generic": {
+        "baseline_only": 0,
+        "same_fail": 3,
+        "same_pass": 56,
+        "treatment_only": 1
+      },
+      "H4_vs_typed+no-retain": {
+        "baseline_only": 0,
+        "same_fail": 3,
+        "same_pass": 56,
+        "treatment_only": 1
+      },
+      "generic-retry_vs_H3": {
+        "baseline_only": 0,
+        "same_fail": 2,
+        "same_pass": 58,
+        "treatment_only": 0
+      },
+      "natural-retry_vs_generic-retry": {
+        "baseline_only": 1,
+        "same_fail": 2,
+        "same_pass": 57,
+        "treatment_only": 0
+      },
+      "retain+generic_vs_generic-retry": {
+        "baseline_only": 2,
+        "same_fail": 2,
+        "same_pass": 56,
+        "treatment_only": 0
+      },
+      "targeted+untyped_vs_natural-retry": {
+        "baseline_only": 0,
+        "same_fail": 3,
+        "same_pass": 57,
+        "treatment_only": 0
+      },
+      "typed+no-retain_vs_targeted+untyped": {
+        "baseline_only": 1,
+        "same_fail": 3,
+        "same_pass": 56,
+        "treatment_only": 0
+      }
+    },
+    "squad": {
+      "H4_vs_H3": {
+        "baseline_only": 3,
+        "same_fail": 1,
+        "same_pass": 54,
+        "treatment_only": 2
+      },
+      "H4_vs_generic-retry": {
+        "baseline_only": 3,
+        "same_fail": 1,
+        "same_pass": 54,
+        "treatment_only": 2
+      },
+      "H4_vs_retain+generic": {
+        "baseline_only": 4,
+        "same_fail": 0,
+        "same_pass": 55,
+        "treatment_only": 1
+      },
+      "H4_vs_typed+no-retain": {
+        "baseline_only": 3,
+        "same_fail": 1,
+        "same_pass": 56,
+        "treatment_only": 0
+      },
+      "generic-retry_vs_H3": {
+        "baseline_only": 2,
+        "same_fail": 1,
+        "same_pass": 55,
+        "treatment_only": 2
+      },
+      "natural-retry_vs_generic-retry": {
+        "baseline_only": 0,
+        "same_fail": 1,
+        "same_pass": 57,
+        "treatment_only": 2
+      },
+      "retain+generic_vs_generic-retry": {
+        "baseline_only": 0,
+        "same_fail": 1,
+        "same_pass": 57,
+        "treatment_only": 2
+      },
+      "targeted+untyped_vs_natural-retry": {
+        "baseline_only": 1,
+        "same_fail": 0,
+        "same_pass": 58,
+        "treatment_only": 1
+      },
+      "typed+no-retain_vs_targeted+untyped": {
+        "baseline_only": 0,
+        "same_fail": 1,
+        "same_pass": 59,
+        "treatment_only": 0
+      }
+    },
+    "trec_qc": {
+      "H4_vs_H3": {
+        "baseline_only": 1,
+        "same_fail": 3,
+        "same_pass": 25,
+        "treatment_only": 1
+      },
+      "H4_vs_generic-retry": {
+        "baseline_only": 0,
+        "same_fail": 4,
+        "same_pass": 26,
+        "treatment_only": 0
+      },
+      "H4_vs_retain+generic": {
+        "baseline_only": 1,
+        "same_fail": 3,
+        "same_pass": 26,
+        "treatment_only": 0
+      },
+      "H4_vs_typed+no-retain": {
+        "baseline_only": 1,
+        "same_fail": 3,
+        "same_pass": 24,
+        "treatment_only": 2
+      },
+      "generic-retry_vs_H3": {
+        "baseline_only": 1,
+        "same_fail": 3,
+        "same_pass": 25,
+        "treatment_only": 1
+      },
+      "natural-retry_vs_generic-retry": {
+        "baseline_only": 0,
+        "same_fail": 3,
+        "same_pass": 26,
+        "treatment_only": 1
+      },
+      "retain+generic_vs_generic-retry": {
+        "baseline_only": 0,
+        "same_fail": 3,
+        "same_pass": 26,
+        "treatment_only": 1
+      },
+      "targeted+untyped_vs_natural-retry": {
+        "baseline_only": 1,
+        "same_fail": 3,
+        "same_pass": 26,
+        "treatment_only": 0
+      },
+      "typed+no-retain_vs_targeted+untyped": {
+        "baseline_only": 1,
+        "same_fail": 4,
+        "same_pass": 25,
+        "treatment_only": 0
+      }
+    }
+  },
+  "paired_policy_tests": {
+    "H4_vs_H3": {
+      "baseline": "H3",
+      "baseline_only": 25,
+      "baseline_success": 423,
+      "delta_success_rate": 0.09814814814814815,
+      "delta_success_rate_ci": [
+        0.06111111111111111,
+        0.12962962962962962
+      ],
+      "mcnemar_exact_p": 1.609927176950882e-07,
+      "n_pairs": 540,
+      "same_fail": 39,
+      "same_pass": 398,
+      "treatment": "H4",
+      "treatment_only": 78,
+      "treatment_success": 476
+    },
+    "H4_vs_generic-retry": {
+      "baseline": "generic-retry",
+      "baseline_only": 25,
+      "baseline_success": 405,
+      "delta_success_rate": 0.13148148148148148,
+      "delta_success_rate_ci": [
+        0.09074074074074075,
+        0.1685185185185185
+      ],
+      "mcnemar_exact_p": 5.303093183678633e-11,
+      "n_pairs": 540,
+      "same_fail": 39,
+      "same_pass": 380,
+      "treatment": "H4",
+      "treatment_only": 96,
+      "treatment_success": 476
+    },
+    "H4_vs_retain+generic": {
+      "baseline": "retain+generic",
+      "baseline_only": 26,
+      "baseline_success": 412,
+      "delta_success_rate": 0.11851851851851852,
+      "delta_success_rate_ci": [
+        0.07407407407407407,
+        0.15555555555555556
+      ],
+      "mcnemar_exact_p": 1.8946406567560375e-09,
+      "n_pairs": 540,
+      "same_fail": 38,
+      "same_pass": 386,
+      "treatment": "H4",
+      "treatment_only": 90,
+      "treatment_success": 476
+    },
+    "H4_vs_typed+no-retain": {
+      "baseline": "typed+no-retain",
+      "baseline_only": 21,
+      "baseline_success": 479,
+      "delta_success_rate": -0.005555555555555556,
+      "delta_success_rate_ci": [
+        -0.027777777777777776,
+        0.016666666666666666
+      ],
+      "mcnemar_exact_p": 0.7492586247608415,
+      "n_pairs": 540,
+      "same_fail": 43,
+      "same_pass": 458,
+      "treatment": "H4",
+      "treatment_only": 18,
+      "treatment_success": 476
+    },
+    "generic-retry_vs_H3": {
+      "baseline": "H3",
+      "baseline_only": 42,
+      "baseline_success": 423,
+      "delta_success_rate": -0.03333333333333333,
+      "delta_success_rate_ci": [
+        -0.06851851851851852,
+        -0.003703703703703704
+      ],
+      "mcnemar_exact_p": 0.03558272445223169,
+      "n_pairs": 540,
+      "same_fail": 93,
+      "same_pass": 381,
+      "treatment": "generic-retry",
+      "treatment_only": 24,
+      "treatment_success": 405
+    },
+    "natural-retry_vs_generic-retry": {
+      "baseline": "generic-retry",
+      "baseline_only": 33,
+      "baseline_success": 405,
+      "delta_success_rate": 0.003703703703703704,
+      "delta_success_rate_ci": [
+        -0.024074074074074074,
+        0.02962962962962963
+      ],
+      "mcnemar_exact_p": 0.9035973456835125,
+      "n_pairs": 540,
+      "same_fail": 100,
+      "same_pass": 372,
+      "treatment": "natural-retry",
+      "treatment_only": 35,
+      "treatment_success": 407
+    },
+    "retain+generic_vs_generic-retry": {
+      "baseline": "generic-retry",
+      "baseline_only": 27,
+      "baseline_success": 405,
+      "delta_success_rate": 0.012962962962962963,
+      "delta_success_rate_ci": [
+        -0.012962962962962963,
+        0.040740740740740744
+      ],
+      "mcnemar_exact_p": 0.4426260049464714,
+      "n_pairs": 540,
+      "same_fail": 101,
+      "same_pass": 378,
+      "treatment": "retain+generic",
+      "treatment_only": 34,
+      "treatment_success": 412
+    },
+    "targeted+untyped_vs_natural-retry": {
+      "baseline": "natural-retry",
+      "baseline_only": 22,
+      "baseline_success": 407,
+      "delta_success_rate": 0.12777777777777777,
+      "delta_success_rate_ci": [
+        0.09444444444444444,
+        0.1648148148148148
+      ],
+      "mcnemar_exact_p": 3.69703787625371e-11,
+      "n_pairs": 540,
+      "same_fail": 42,
+      "same_pass": 385,
+      "treatment": "targeted+untyped",
+      "treatment_only": 91,
+      "treatment_success": 476
+    },
+    "typed+no-retain_vs_targeted+untyped": {
+      "baseline": "targeted+untyped",
+      "baseline_only": 18,
+      "baseline_success": 476,
+      "delta_success_rate": 0.005555555555555556,
+      "delta_success_rate_ci": [
+        -0.016666666666666666,
+        0.027777777777777776
+      ],
+      "mcnemar_exact_p": 0.7492586247608415,
+      "n_pairs": 540,
+      "same_fail": 43,
+      "same_pass": 458,
+      "treatment": "typed+no-retain",
+      "treatment_only": 21,
+      "treatment_success": 479
+    }
+  },
+  "per_seed_results": {
+    "1": {
+      "H3": {
+        "n": 180,
+        "num_leaf_calls": 267,
+        "num_retries": 87,
+        "premature_stop_count": 37,
+        "success_count": 140,
+        "success_rate": 0.7777777777777778
+      },
+      "H4": {
+        "n": 180,
+        "num_leaf_calls": 241,
+        "num_retries": 27,
+        "premature_stop_count": 21,
+        "success_count": 158,
+        "success_rate": 0.8777777777777778
+      },
+      "generic-retry": {
+        "n": 180,
+        "num_leaf_calls": 273,
+        "num_retries": 93,
+        "premature_stop_count": 35,
+        "success_count": 137,
+        "success_rate": 0.7611111111111111
+      },
+      "natural-retry": {
+        "n": 180,
+        "num_leaf_calls": 268,
+        "num_retries": 88,
+        "premature_stop_count": 37,
+        "success_count": 134,
+        "success_rate": 0.7444444444444445
+      },
+      "retain+generic": {
+        "n": 180,
+        "num_leaf_calls": 260,
+        "num_retries": 25,
+        "premature_stop_count": 31,
+        "success_count": 140,
+        "success_rate": 0.7777777777777778
+      },
+      "targeted+untyped": {
+        "n": 180,
+        "num_leaf_calls": 215,
+        "num_retries": 35,
+        "premature_stop_count": 24,
+        "success_count": 156,
+        "success_rate": 0.8666666666666667
+      },
+      "typed+no-retain": {
+        "n": 180,
+        "num_leaf_calls": 210,
+        "num_retries": 30,
+        "premature_stop_count": 20,
+        "success_count": 160,
+        "success_rate": 0.8888888888888888
+      }
+    },
+    "2": {
+      "H3": {
+        "n": 180,
+        "num_leaf_calls": 258,
+        "num_retries": 78,
+        "premature_stop_count": 33,
+        "success_count": 143,
+        "success_rate": 0.7944444444444444
+      },
+      "H4": {
+        "n": 180,
+        "num_leaf_calls": 239,
+        "num_retries": 26,
+        "premature_stop_count": 19,
+        "success_count": 161,
+        "success_rate": 0.8944444444444445
+      },
+      "generic-retry": {
+        "n": 180,
+        "num_leaf_calls": 261,
+        "num_retries": 81,
+        "premature_stop_count": 41,
+        "success_count": 131,
+        "success_rate": 0.7277777777777777
+      },
+      "natural-retry": {
+        "n": 180,
+        "num_leaf_calls": 257,
+        "num_retries": 77,
+        "premature_stop_count": 38,
+        "success_count": 136,
+        "success_rate": 0.7555555555555555
+      },
+      "retain+generic": {
+        "n": 180,
+        "num_leaf_calls": 269,
+        "num_retries": 27,
+        "premature_stop_count": 33,
+        "success_count": 135,
+        "success_rate": 0.75
+      },
+      "targeted+untyped": {
+        "n": 180,
+        "num_leaf_calls": 211,
+        "num_retries": 31,
+        "premature_stop_count": 17,
+        "success_count": 162,
+        "success_rate": 0.9
+      },
+      "typed+no-retain": {
+        "n": 180,
+        "num_leaf_calls": 212,
+        "num_retries": 32,
+        "premature_stop_count": 17,
+        "success_count": 163,
+        "success_rate": 0.9055555555555556
+      }
+    },
+    "3": {
+      "H3": {
+        "n": 180,
+        "num_leaf_calls": 257,
+        "num_retries": 77,
+        "premature_stop_count": 35,
+        "success_count": 140,
+        "success_rate": 0.7777777777777778
+      },
+      "H4": {
+        "n": 180,
+        "num_leaf_calls": 235,
+        "num_retries": 23,
+        "premature_stop_count": 22,
+        "success_count": 157,
+        "success_rate": 0.8722222222222222
+      },
+      "generic-retry": {
+        "n": 180,
+        "num_leaf_calls": 260,
+        "num_retries": 80,
+        "premature_stop_count": 35,
+        "success_count": 137,
+        "success_rate": 0.7611111111111111
+      },
+      "natural-retry": {
+        "n": 180,
+        "num_leaf_calls": 263,
+        "num_retries": 83,
+        "premature_stop_count": 33,
+        "success_count": 137,
+        "success_rate": 0.7611111111111111
+      },
+      "retain+generic": {
+        "n": 180,
+        "num_leaf_calls": 263,
+        "num_retries": 27,
+        "premature_stop_count": 36,
+        "success_count": 137,
+        "success_rate": 0.7611111111111111
+      },
+      "targeted+untyped": {
+        "n": 180,
+        "num_leaf_calls": 211,
+        "num_retries": 31,
+        "premature_stop_count": 21,
+        "success_count": 158,
+        "success_rate": 0.8777777777777778
+      },
+      "typed+no-retain": {
+        "n": 180,
+        "num_leaf_calls": 208,
+        "num_retries": 28,
+        "premature_stop_count": 24,
+        "success_count": 156,
+        "success_rate": 0.8666666666666667
+      }
+    }
+  },
+  "prompt_token_overhead": {
+    "by_variant": {
+      "H3": {
+        "avg_prompt_tokens": 392.7736572890026,
+        "avg_retry_prompt_tokens": 316.08677685950414,
+        "leaf_count": 782,
+        "retry_leaf_count": 242,
+        "total_prompt_tokens": 307149
+      },
+      "H4": {
+        "avg_prompt_tokens": 432.5272727272727,
+        "avg_retry_prompt_tokens": 604.6538461538462,
+        "leaf_count": 715,
+        "retry_leaf_count": 78,
+        "total_prompt_tokens": 309257
+      },
+      "generic-retry": {
+        "avg_prompt_tokens": 434.8299748110831,
+        "avg_retry_prompt_tokens": 451.1771653543307,
+        "leaf_count": 794,
+        "retry_leaf_count": 254,
+        "total_prompt_tokens": 345255
+      },
+      "natural-retry": {
+        "avg_prompt_tokens": 442.6535532994924,
+        "avg_retry_prompt_tokens": 476.43145161290323,
+        "leaf_count": 788,
+        "retry_leaf_count": 248,
+        "total_prompt_tokens": 348811
+      },
+      "retain+generic": {
+        "avg_prompt_tokens": 418.52272727272725,
+        "avg_retry_prompt_tokens": 446.1045751633987,
+        "leaf_count": 792,
+        "retry_leaf_count": 153,
+        "total_prompt_tokens": 331470
+      },
+      "targeted+untyped": {
+        "avg_prompt_tokens": 434.8744113029827,
+        "avg_retry_prompt_tokens": 477.92783505154637,
+        "leaf_count": 637,
+        "retry_leaf_count": 97,
+        "total_prompt_tokens": 277015
+      },
+      "typed+no-retain": {
+        "avg_prompt_tokens": 450.1460317460317,
+        "avg_retry_prompt_tokens": 588.1777777777778,
+        "leaf_count": 630,
+        "retry_leaf_count": 90,
+        "total_prompt_tokens": 283592
+      }
+    },
+    "comparisons": {
+      "H4_vs_H3": {
+        "avg_prompt_token_delta": 39.75361543827012,
+        "avg_retry_prompt_token_delta": 288.56706929434205,
+        "total_prompt_token_delta": 2108
+      },
+      "H4_vs_generic-retry": {
+        "avg_prompt_token_delta": -2.302702083810402,
+        "avg_retry_prompt_token_delta": 153.47668079951546,
+        "total_prompt_token_delta": -35998
+      },
+      "H4_vs_retain+generic": {
+        "avg_prompt_token_delta": 14.00454545454545,
+        "avg_retry_prompt_token_delta": 158.5492709904475,
+        "total_prompt_token_delta": -22213
+      },
+      "H4_vs_typed+no-retain": {
+        "avg_prompt_token_delta": -17.61875901875902,
+        "avg_retry_prompt_token_delta": 16.476068376068383,
+        "total_prompt_token_delta": 25665
+      },
+      "generic-retry_vs_H3": {
+        "avg_prompt_token_delta": 42.05631752208052,
+        "avg_retry_prompt_token_delta": 135.09038849482658,
+        "total_prompt_token_delta": 38106
+      },
+      "natural-retry_vs_generic-retry": {
+        "avg_prompt_token_delta": 7.823578488409282,
+        "avg_retry_prompt_token_delta": 25.254286258572506,
+        "total_prompt_token_delta": 3556
+      },
+      "retain+generic_vs_generic-retry": {
+        "avg_prompt_token_delta": -16.307247538355853,
+        "avg_retry_prompt_token_delta": -5.072590190932033,
+        "total_prompt_token_delta": -13785
+      },
+      "targeted+untyped_vs_natural-retry": {
+        "avg_prompt_token_delta": -7.779141996509679,
+        "avg_retry_prompt_token_delta": 1.4963834386431358,
+        "total_prompt_token_delta": -71796
+      },
+      "typed+no-retain_vs_targeted+untyped": {
+        "avg_prompt_token_delta": 15.271620443049017,
+        "avg_retry_prompt_token_delta": 110.24994272623144,
+        "total_prompt_token_delta": 6577
+      }
+    }
+  },
+  "self_evaluation_bias_gap": {}
+}

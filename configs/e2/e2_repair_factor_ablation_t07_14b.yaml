@@ -1,0 +1,66 @@
+experiment_id: e2_repair_factor_ablation_t07_14b
+benchmarks:
+  - name: boolq
+    n_tasks: 20
+    seeds: [1, 2, 3]
+  - name: squad
+    n_tasks: 20
+    seeds: [1, 2, 3]
+  - name: sciq
+    n_tasks: 20
+    seeds: [1, 2, 3]
+  - name: arc_easy
+    n_tasks: 20
+    seeds: [1, 2, 3]
+  - name: glue_sst2
+    n_tasks: 20
+    seeds: [1, 2, 3]
+  - name: glue_rte
+    n_tasks: 20
+    seeds: [1, 2, 3]
+  - name: glue_mrpc
+    n_tasks: 20
+    seeds: [1, 2, 3]
+  - name: trec_qc
+    n_tasks: 10
+    seeds: [1, 2, 3]
+  - name: mini_workflow
+    n_tasks: 30
+    seeds: [1, 2, 3]
+variants:
+  - H3
+  - generic-retry
+  - natural-retry
+  - retain+generic
+  - targeted+untyped
+  - typed+no-retain
+  - H4
+model:
+  client: local
+  provider: ollama
+  model_name: qwen2.5-coder:14b
+  endpoint: http://localhost:11434/v1/chat/completions
+  parameter_count: 14700000000
+  parameter_count_label: 14.7B coder
+  max_output_tokens: 512
+  temperature: 0.7
+  timeout_seconds: 120
+evaluation:
+  oracle_guided_acceptance: false
+  result_role: primary_oracle_blind
+budget:
+  max_retries: 3
+  veriharness_k: 2
+  max_leaf_calls_per_task: 4
+  max_wall_time_seconds: 604800
+metadata:
+  matrix_purpose: repair_factor_disentanglement
+  leaf_tasks_per_seed: 150
+  workflow_tasks_per_seed: 30
+  call_budget: 4
+  temperature_arm: '0.7'
+  factors:
+    candidate_retention: [retain+generic, H4]
+    typed_failure_payloads: [typed+no-retain, H4]
+    targeted_locus_selection: [targeted+untyped]
+    natural_language_gate_error: [natural-retry, targeted+untyped]

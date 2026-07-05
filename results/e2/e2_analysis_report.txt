@@ -1,0 +1,85 @@
+
+========================================================================
+E2 REPAIR-FACTOR ABLATION  —  3780 rows, 540 instances
+========================================================================
+
+[1] PER-VARIANT (all strata)
+  variant                n    succ   wrong  premat   gate  leaf
+  H3                   540   0.783   0.000   0.194  0.881  1.45
+  generic-retry        540   0.750   0.000   0.206  0.857  1.47
+  natural-retry        540   0.754   0.000   0.200  0.867  1.46
+  retain+generic       540   0.763   0.000   0.185  0.869  1.47
+  targeted+untyped     540   0.881   0.000   0.115  1.000  1.18
+  typed+no-retain      540   0.887   0.000   0.113  1.000  1.17
+  H4                   540   0.881   0.000   0.115  1.000  1.32
+
+[2] INTEGRITY  wrong_claim_accepted per variant (must be ~0): OK
+  H3                 0.000
+  generic-retry      0.000
+  natural-retry      0.000
+  retain+generic     0.000
+  targeted+untyped   0.000
+  typed+no-retain    0.000
+  H4                 0.000
+
+[3] 2x2 DECOMPOSITION  candidate_retention x typed_payload (all strata)
+  generic-retry (retain=off,typed=off)       0.750
+  retain+generic (retain=on,typed=off)       0.763
+  typed+no-retain (retain=off,typed=on)      0.887
+  H4 (retain=on,typed=on)                    0.881
+  n_pairs=540  main(retention)=0.004  main(typing)=0.128  interaction=-0.019
+
+[4] *** KEY CONTRAST: H4 vs targeted+untyped ***  (typed vs diagnostic-untyped)
+  [all] H4=0.881 vs targeted+untyped=0.881  delta=0.000 (CI -0.026..0.020)  McNemar p=1.000  n=540  [H4_only=21 tgt_only=21]
+  [single_step_leaf] H4=0.858 vs targeted+untyped=0.858  delta=0.000 (CI -0.024..0.031)  McNemar p=1.000  n=450  [H4_only=21 tgt_only=21]
+  [multi_step_workflow] H4=1.000 vs targeted+untyped=1.000  delta=0.000 (CI 0.000..0.000)  McNemar p=1.000  n=90  [H4_only=0 tgt_only=0]
+
+[5] PAIRED DELTAS vs H4  (treatment=H4, baseline=each variant)
+  H4 vs H3                 delta=  0.098  McNemar p= 0.000  n=540
+  H4 vs generic-retry      delta=  0.131  McNemar p= 0.000  n=540
+  H4 vs natural-retry      delta=  0.128  McNemar p= 0.000  n=540
+  H4 vs retain+generic     delta=  0.119  McNemar p= 0.000  n=540
+  H4 vs targeted+untyped   delta=  0.000  McNemar p= 1.000  n=540
+  H4 vs typed+no-retain    delta= -0.006  McNemar p= 0.749  n=540
+
+[6] INFORMATION-WITHOUT-STRUCTURE ARMS
+  natural-retry_vs_generic-retry             delta=  0.004  McNemar p= 0.904  n=540
+  targeted+untyped_vs_natural-retry          delta=  0.128  McNemar p= 0.000  n=540
+  targeted+untyped_vs_typed+no-retain        delta=  0.006  McNemar p= 0.749  n=540
+
+[7] HEADLINE >=80% RULE  (fraction of H4-generic delta recovered by one factor)
+  [all] delta_full(H4-generic)=0.131  n=540
+      candidate_retention                recov=  0.013  frac=  0.099
+      typed_payload                      recov=  0.137  frac=  1.042  <== >=80%
+      diagnostic_info_targeted_untyped   recov=  0.131  frac=  1.000  <== >=80%
+      natural_language_verbosity         recov=  0.004  frac=  0.028
+  [single_step_leaf] delta_full(H4-generic)=-0.013  n=450
+      candidate_retention                recov=  0.002  frac= -0.167
+      typed_payload                      recov= -0.007  frac=  0.500
+      diagnostic_info_targeted_untyped   recov= -0.013  frac=  1.000  <== >=80%
+      natural_language_verbosity         recov= -0.007  frac=  0.500
+  [multi_step_workflow] delta_full(H4-generic)=0.856  n=90
+      candidate_retention                recov=  0.067  frac=  0.078
+      typed_payload                      recov=  0.856  frac=  1.000  <== >=80%
+      diagnostic_info_targeted_untyped   recov=  0.856  frac=  1.000  <== >=80%
+      natural_language_verbosity         recov=  0.056  frac=  0.065
+
+[8] PER-SEED success rate by variant
+  variant            seed 1 seed 2 seed 3
+  H3                  0.778  0.794  0.778
+  generic-retry       0.761  0.728  0.761
+  natural-retry       0.744  0.756  0.761
+  retain+generic      0.778  0.750  0.761
+  targeted+untyped    0.867  0.900  0.878
+  typed+no-retain     0.889  0.906  0.867
+  H4                  0.878  0.894  0.872
+
+========================================================================
+VERDICT
+========================================================================
+  H4 vs targeted+untyped: delta=0.000 (95% CI -0.026..0.020), McNemar p=1.000, n=540 pairs.
+  => H4 ~= targeted+untyped. Mechanism = INFORMATION CONTENT, not typing per se.
+     Reframe 'typed repair' -> 'diagnostic repair'. CI supports equivalence (both bounds within +/-3pp).
+  Mechanism factor(s) recovering >=80% of the H4-generic delta: typed_payload, diagnostic_info_targeted_untyped.
+
+Wrote JSON: /Users/angoyal/.copilot/repos/copilot-worktrees/veriharness/angoyal-linkedin-sturdy-chainsaw/results/e2/e2_analysis.json
