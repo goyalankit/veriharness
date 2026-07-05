@@ -82,4 +82,4 @@ VERDICT
      Reframe 'typed repair' -> 'diagnostic repair'. CI supports equivalence (both bounds within +/-3pp).
   Mechanism factor(s) recovering >=80% of the H4-generic delta: typed_payload, diagnostic_info_targeted_untyped.
 
-Wrote JSON: /Users/angoyal/.copilot/repos/copilot-worktrees/veriharness/angoyal-linkedin-sturdy-chainsaw/results/e2/e2_analysis.json
+Wrote JSON: results/e2/e2_analysis.json

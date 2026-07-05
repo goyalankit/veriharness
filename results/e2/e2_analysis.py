@@ -368,7 +368,11 @@ def main() -> int:
     if args.json_out:
         args.json_out.parent.mkdir(parents=True, exist_ok=True)
         args.json_out.write_text(json.dumps(rep, indent=2, sort_keys=True), encoding="utf-8")
-        print(f"\nWrote JSON: {args.json_out}")
+        try:
+            _shown = args.json_out.resolve().relative_to(Path.cwd())
+        except ValueError:
+            _shown = args.json_out.name
+        print(f"\nWrote JSON: {_shown}")
     return 0
 
 
